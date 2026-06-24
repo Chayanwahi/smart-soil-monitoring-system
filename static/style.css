@@ -1,34 +1,92 @@
-body{
+*{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f6f8;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-header{
-    background:#2e7d32;
+body{
+    background:#0f172a;
     color:white;
-    text-align:center;
-    padding:20px;
 }
 
-.container{
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    padding:50px 8%;
+}
+
+h1{
+    text-align:center;
+    font-size:3rem;
+}
+
+.subtitle{
+    text-align:center;
+    margin-top:10px;
+    opacity:0.9;
+    font-size:1.1rem;
+}
+
+.dashboard{
     display:flex;
+    gap:25px;
     justify-content:center;
     flex-wrap:wrap;
-    gap:20px;
-    margin-top:30px;
+    margin-top:50px;
 }
 
 .card{
-    background:white;
-    width:250px;
-    padding:20px;
-    border-radius:15px;
+    width:280px;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+    padding:25px;
     text-align:center;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    margin-bottom:15px;
 }
 
 .card p{
-    font-size:24px;
-    font-weight:bold;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.info-section{
+    margin-top:60px;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.info-card{
+    width:350px;
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+.info-card h3{
+    margin-bottom:10px;
 }
