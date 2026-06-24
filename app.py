@@ -9,8 +9,8 @@ def home():
 @app.route("/api/sensor-data")
 def sensor_data():
     return jsonify({
-        "moisture": 65,
-        "temperature": 28,
+        "moisture": 72,
+        "temperature": 29,
         "status": "Healthy"
     })
 
