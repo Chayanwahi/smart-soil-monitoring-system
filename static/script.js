@@ -1,18 +1,19 @@
 async function loadData(){
 
     const response = await fetch("/api/sensor-data");
+
     const data = await response.json();
 
     document.getElementById("moisture").innerText =
-        data.moisture + "%";
+    data.moisture + "%";
 
     document.getElementById("temperature").innerText =
-        data.temperature + "°C";
+    data.temperature + "°C";
 
     document.getElementById("status").innerText =
-        data.status;
+    data.status;
 }
 
 loadData();
 
-setInterval(loadData, 5000);
+setInterval(loadData,5000);
