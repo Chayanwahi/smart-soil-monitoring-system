@@ -1,14 +1,71 @@
-<div class="card">
-    <h2>💨 Humidity</h2>
-    <p id="humidity">Loading...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Soil Monitoring System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="overlay">
+
+        <h1>🌱 Smart Soil Monitoring & Crop Health Alert System</h1>
+
+        <p class="subtitle">
+            Real-Time Agricultural Monitoring Dashboard
+        </p>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h2>💧 Soil Moisture</h2>
+                <p id="moisture">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h2>🌡 Temperature</h2>
+                <p id="temperature">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h2>🌿 Plant Status</h2>
+                <p id="status">Loading...</p>
+            </div>
+
+        </div>
+
+        <div class="info-section">
+
+            <div class="info-card">
+                <h3>  Project Objective</h3>
+                <p>
+                    Monitor soil conditions in real time and provide
+                    crop health alerts for efficient farming.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>⚙ Technologies Used</h3>
+                <p>
+                    nRF52832 • Flask • IoT • HTML/CSS/JS • 3D Printing
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<div class="card">
-    <h2>📡 Sensor Status</h2>
-    <p id="sensor">Loading...</p>
-</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
-<div class="card">
-    <h2>🕒 Last Updated</h2>
-    <p id="time">Loading...</p>
-</div>
+</body>
+</html>
