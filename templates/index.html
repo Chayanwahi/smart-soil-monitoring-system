@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Soil Monitoring System</title>
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <div class="overlay">
+
+            <h1>🌱 Smart Soil Monitoring & Crop Health Alert System</h1>
+
+            <p class="subtitle">
+                Real-Time Agricultural Monitoring Dashboard
+            </p>
+
+            <div class="dashboard">
+
+                <div class="card moisture">
+                    <h2>💧 Soil Moisture</h2>
+                    <p id="moisture">Loading...</p>
+                </div>
+
+                <div class="card temperature">
+                    <h2>🌡 Temperature</h2>
+                    <p id="temperature">Loading...</p>
+                </div>
+
+                <div class="card status">
+                    <h2>🌿 Plant Status</h2>
+                    <p id="status">Loading...</p>
+                </div>
+
+            </div>
+
+            <div class="info-section">
+
+                <div class="info-card">
+                    <h3>🎯 Objective</h3>
+                    <p>
+                        Monitor soil conditions in real time and provide
+                        crop health alerts for efficient farming.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚙ Technologies</h3>
+                    <p>
+                        nRF52832 • IoT • Flask • HTML/CSS/JS • 3D Printing
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
