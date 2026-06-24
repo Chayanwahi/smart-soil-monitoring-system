@@ -1,4 +1,4 @@
-# 🌱 Smart Soil Monitoring & Crop Health Alert System
+# Smart Soil Monitoring & Crop Health Alert System
 
 ## Overview
 This project is an IoT-based agriculture solution that monitors soil moisture and provides crop health alerts. It combines Hardware, Firmware, Software, and 3D Printing into a complete smart farming system.
@@ -32,4 +32,4 @@ This project is an IoT-based agriculture solution that monitors soil moisture an
 - PLA Filament
 
 ## Project Status
-🚧 Currently Under Development
+ Currently Under Development
